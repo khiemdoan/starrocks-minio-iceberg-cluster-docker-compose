@@ -12,6 +12,16 @@ This is a simple setup for development and testing purposes. It is not intended 
 
 I do not take any responsibility for any issues that may arise from using this setup in production.
 
+## Components
+
+![System Diagram](diagram.jpg)
+
+* StarRocks Frontend: 4 nodes (with HAProxy as load balancer)
+* StarRocks Backend: 6 nodes
+* MinIO: 5 nodes (with HAProxy as load balancer)
+* Iceberg REST Catalog: 1 node
+* PostgreSQL: 1 node (for Iceberg REST Catalog metadata)
+
 ## Running
 
 1. Run `mkdirs.sh` to create necessary directories.
