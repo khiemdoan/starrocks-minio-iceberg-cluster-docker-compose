@@ -69,6 +69,7 @@ services:
       - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
     ports:
       - 9080:9080/tcp # status
+      - 8181:8181/tcp # Iceberg REST
       - 8030:8030/tcp # StarRocks FE HTTP
       - 8040:8040/tcp # StarRocks CN HTTP
       - 9030:9030/tcp # StarRocks Query
